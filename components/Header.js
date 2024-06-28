@@ -1,14 +1,27 @@
-import Link from 'next/link';
+import React from 'react';
+import { useEffect, useState } from 'react';
 
-const Header = () => (
-  <nav>
-    <Link href="/" passHref>
-      <a>Home</a>
-    </Link>
-    <Link href="/projects/" passHref>
-      <a>Projects</a>
-    </Link>
-  </nav>
-);
+const Header = () => {
+  const [delayBigWord, setDelayBigWord] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDelayBigWord(true);
+    }, 500);
+  }, []);
+
+  return (
+    <div className="flex justify-center items-center h-screen font-sans">
+      <h1 className="text-6xl sm:text-8xl md:text-9xl font-bold leading-tight">
+        <span>Few </span>
+        <span className={`transition-opacity duration-500 ${delayBigWord ? 'opacity-100 flair-word' : 'opacity-0'}`}>
+          Big
+        </span>
+        <span> Words</span>
+      </h1>
+    </div>
+  );
+};
 
 export default Header;
+
