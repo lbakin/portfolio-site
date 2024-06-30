@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 
 const Nav = () => {
@@ -7,9 +8,9 @@ const Nav = () => {
       <nav>
         <ul className="flex justify-between">
           <li>
-            <a href="/" className="text-black underline hover:text-red-600">
+            <Link href="/" className="text-black underline hover:text-red-600">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <ScrollLink

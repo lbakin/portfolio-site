@@ -26,5 +26,5 @@ nav a {
 }
 
 .flair-word {
-  @apply text-red-600 font-cursive animate-fadeIn;
+  @apply text-rose-800 font-cursive animate-fadeIn;
 }
