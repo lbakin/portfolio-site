@@ -10,7 +10,7 @@ import Questionnaire from "../components/Questionnaire"
 export default function Home() {
   return (
     
-      <div>
+      <div className="px-10">
         <Nav />
         <Header />
         <Showcase />
