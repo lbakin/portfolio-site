@@ -10,9 +10,11 @@ import Questionnaire from "../components/Questionnaire"
 export default function Home() {
   return (
     
-      <div className="px-10">
-        <Nav />
-        <Header />
+      <div>
+        <div className="px-10">
+          <Nav />
+          <Header />
+        </div>
         <Showcase />
         <CallToAction />
         <Questionnaire />
