@@ -51,8 +51,9 @@ const Showcase = () => {
 
   return (
     <div className={`flex flex-col xl:flex-row justify-center items-center h-auto xl:h-screen ${isHovered ? 'hover-gradient' : ''} transition-all duration-1000 ease-in-out`}>
-      <div className="w-full xl:w-1/4 p-8 relative text-center xl:text-left">
-        <p className="text-4xl font-sans">
+      <div className="w-full xl:w-1/4 p-8 relative text-center xl:text-left mt-8 xl:mt-0">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-sans leading-relaxed">
+          
           I'm Lev Bakin, I create{' '}
           <span className="flair-word">aesthetically</span> pleasing and functional websites.
         </p>

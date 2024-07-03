@@ -9,17 +9,13 @@ import Questionnaire from "../components/Questionnaire"
 
 export default function Home() {
   return (
-    
       <div>
-        
         <Nav />
         <Header />
-        
         <Showcase />
         <CallToAction />
         <Questionnaire />
         <Footer />
       </div>
-    
   )
 }

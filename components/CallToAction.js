@@ -56,7 +56,7 @@ const CallToAction = () => {
       </div>
       <div className="relative z-10 flex flex-row space-x-6 mb-4">
         <a
-          href="https://www.instagram.com/yourprofile"
+          href="https://www.instagram.com/butterynubs/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-rose-600 transition duration-300 ease-in-out"
@@ -70,7 +70,7 @@ const CallToAction = () => {
           <i className="fas fa-envelope text-3xl"></i>
         </a>
         <a
-          href="https://www.linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/lev-bakin/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-rose-600 transition duration-300 ease-in-out"
