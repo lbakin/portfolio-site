@@ -11,10 +11,10 @@ export default function Home() {
   return (
     
       <div>
-        <div className="px-10">
-          <Nav />
-          <Header />
-        </div>
+        
+        <Nav />
+        <Header />
+        
         <Showcase />
         <CallToAction />
         <Questionnaire />

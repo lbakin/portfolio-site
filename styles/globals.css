@@ -3,11 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?Dancing+Script:wght@400;700&display=swap');
+
 
 
 body {
-  font-family: 'Arial', sans-serif;
+  @apply font-sans;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -28,3 +31,10 @@ nav a {
 .flair-word {
   @apply text-rose-800 font-cursive animate-fadeIn;
 }
+
+.hover-gradient {
+  background: linear-gradient(to bottom, white, #6cb7d5);
+  background-size: 200% 200%;
+  transition: background-position 0.5s ease-in-out;
+}
+

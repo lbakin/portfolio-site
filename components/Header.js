@@ -11,13 +11,13 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-screen font-sans">
-      <h1 className="text-6xl sm:text-8xl md:text-9xl font-bold leading-tight">
-        <span>Crafting</span>
-        <div className={`transition-opacity duration-500 ${delayBigWord ? 'opacity-100 flair-word' : 'opacity-0'}`}>
+    <div className="flex justify-center items-center h-4/6 font-sans p-8 text-center">
+      <h1 className="text-6xl sm:text-8xl md:text-9xl font-medium">
+        Crafting
+        <div className={`transition-opacity duration-500 pt-2 pb-4 ${delayBigWord ? 'opacity-100 flair-word' : 'opacity-0'}`}>
           Smooth
         </div>
-        <span> Digital Experiences</span>
+        Digital Experiences
       </h1>
     </div>
   );

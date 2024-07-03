@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 
 const Nav = () => {
+  const LinkClasses="text-black underline hover:text-rose-800 hover:bg-white rounded-md cursor-pointer"
+
   return (
-    <header className="sticky top-0 w-full p-4 z-50">
+    <div className="sticky top-0 w-full px-4 z-50 bg-white">
       <nav>
         <ul className="flex justify-between">
           <li>
-            <Link href="/" className="text-black underline hover:text-red-600">
+            <Link href="/" className={`${LinkClasses}`}>
               Home
             </Link>
           </li>
@@ -17,14 +19,14 @@ const Nav = () => {
               to="contact"
               smooth={true}
               duration={500}
-              className="text-black underline hover:text-red-600 cursor-pointer"
+              className={`${LinkClasses}`}
             >
               Contact
             </ScrollLink>
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 };
 
