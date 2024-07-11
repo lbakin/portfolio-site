@@ -6,6 +6,7 @@ import CallToAction from '../components/CallToAction'
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import Questionnaire from "../components/Questionnaire"
+import FeaturedWorks from "../components/FeaturedWorks"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Nav />
         <Header />
         <Showcase />
+        <FeaturedWorks />
         <CallToAction />
         <Questionnaire />
         <Footer />

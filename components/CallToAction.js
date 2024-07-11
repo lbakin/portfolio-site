@@ -77,6 +77,14 @@ const CallToAction = () => {
         >
           <i className="fab fa-linkedin text-3xl"></i>
         </a>
+        <a
+          href="https://github.com/lbakin"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-rose-600 transition duration-300 ease-in-out"
+        >
+          <i className="fab fa-github text-3xl"></i>
+        </a>
       </div>
       <Questionnaire isOpen={isQuestionnaireOpen} onClose={closeQuestionnaire} />
     </div>

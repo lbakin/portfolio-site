@@ -33,8 +33,13 @@ nav a {
 }
 
 .hover-gradient {
-  background: linear-gradient(to bottom, white, #6cb7d5);
+  background: linear-gradient(to bottom, white, #6cd599);
   background-size: 200% 200%;
   transition: background-position 0.5s ease-in-out;
 }
 
+.preview {
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  pointer-events: none; /* Prevents the preview from interfering with mouse events */
+}
