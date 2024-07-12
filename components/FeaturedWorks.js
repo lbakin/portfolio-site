@@ -60,17 +60,17 @@ const FeaturedWorks = () => {
 
   return (
     <section 
-      className={`py-20 pb-52 transition-colors duration-300 md:px-14 ${
+      className={`pb-52 transition-colors duration-300 md:px-14 ${
         hoveredIndex !== null ? 'bg-teal-200' : 'bg-gray-100'
       }`}
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl mb-8 text-center uppercase tracking-wider">Featured Work<span className="flair-word">s</span></h2>
+        <h2 className="text-6xl py-20 text-center uppercase tracking-wider"> <span className="flair-word">F</span>eatured Works</h2>
         <div className="flex flex-wrap justify-between gap-32 space-y-16 relative">
           {works.map((work, index) => (
             <div
               key={index}
-              className={`work-content group-hover:bg-teal-500 transition duration-300 ease-in-out relative group p-4 md:w-2/3 w-full flex flex-row ${
+              className={`work-content group-hover:bg-teal-500 transition duration-300 ease-in-out relative group md:w-2/3 w-full flex flex-row ${
                 index % 3 === 0 ? 'ml-auto' : index % 3 === 1 ? ' mr-auto' : ' mx-auto'
               }`}
               
@@ -92,12 +92,12 @@ const FeaturedWorks = () => {
               <div
                 className="preview absolute rounded-xl z-10 hidden md:block -right-10 -top-10 flex-shrink-0"
                 ref={(el) => (refs.current.previews[index] = el)}
-                style={{ width: '300px', height: '450px', opacity: 0, zIndex: 10 }}
+                style={{ width: '300px', height: '450px', opacity: 1, zIndex: 10 }}
               >
                 <img
                   src={work.previewImage}
                   alt={`${work.title} preview`}
-                  className="w-full h-full object-cover shadow-lg rounded-xl z-10"
+                  className="w-full h-full object-cover shadow-lg rounded-xl z-10 p-2 border bg-gray-400 bg-opacity-60"
                 />
               </div>
             </div>

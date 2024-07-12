@@ -4,11 +4,11 @@ const DisplayCards = ({ onHover }) => {
   return (
     <div className="flex flex-wrap justify-center items-center relative h-full w-full max-w-full">
       <div
-        className="transform -rotate-12 -translate-x-32 transition duration-1000 ease-in-out m-4 max-w-xs group"
+        className="transform -rotate-12 -translate-x-16 md:-translate-x-32 transition duration-1000 ease-in-out m-4 max-w-xs group"
         onMouseEnter={() => onHover(true)}
         onMouseLeave={() => onHover(false)}
       >
-        <div className="w-64 h-96 bg-gray-200 rounded-xl shadow-xl transition duration-1000 ease-in-out">
+        <div className="w-32 md:w-64 h-48 md:h-96 bg-gray-200 rounded-xl shadow-xl transition duration-1000 ease-in-out">
           <img
             src="/images/ProfilePic2.png"
             alt="Showcase Image"
@@ -21,7 +21,7 @@ const DisplayCards = ({ onHover }) => {
         onMouseEnter={() => onHover(true)}
         onMouseLeave={() => onHover(false)}
       >
-        <div className="w-64 h-96 bg-gray-200 rounded-xl shadow-xl transition duration-1000 ease-in-out">
+        <div className="w-32 md:w-64 h-48 md:h-96 bg-gray-200 rounded-xl shadow-xl transition duration-1000 ease-in-out">
           <img
             src="/images/ProfilePic3.png"
             alt="Showcase Image"
@@ -30,11 +30,11 @@ const DisplayCards = ({ onHover }) => {
         </div>
       </div>
       <div
-        className="absolute translate-x-32 translate-y-12 rotate-[30deg] transform transition duration-1000 ease-in-out m-4 max-w-xs group"
+        className="absolute translate-x-16 md:translate-x-32 translate-y-12 rotate-[30deg] transform transition duration-1000 ease-in-out m-4 max-w-xs group"
         onMouseEnter={() => onHover(true)}
         onMouseLeave={() => onHover(false)}
       >
-        <div className="w-64 h-96 bg-gray-200 rounded-xl shadow-xl transition duration-1000 ease-in-out">
+        <div className="w-32 md:w-64 h-48 md:h-96 bg-gray-200 rounded-xl shadow-xl transition duration-1000 ease-in-out">
           <img
             src="/images/ProfilePic1.png"
             alt="Showcase Image"
@@ -53,9 +53,8 @@ const Showcase = () => {
     <div className={`flex flex-col xl:flex-row justify-center items-center h-auto xl:h-screen transition-all duration-1000 ease-in-out ${isHovered ? 'hover-gradient' : ''}`}>
       <div className="w-full xl:w-1/4 p-8 relative text-center xl:text-left mt-8 xl:mt-0">
         <p className="text-2xl sm:text-3xl md:text-4xl font-sans leading-relaxed">
+        Hi, I'm Lev Bakin. I create websites that blend <span className="flair-word">visual</span> appeal with seamless usability.
           
-          I'm Lev Bakin, I create{' '}
-          <span className="flair-word">aesthetically</span> pleasing and functional websites.
         </p>
       </div>
       <div className={`w-full xl:w-3/4 flex justify-center items-center mx-auto relative py-20 overflow-hidden`}>

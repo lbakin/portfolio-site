@@ -37,13 +37,13 @@ const CallToAction = () => {
   const closeQuestionnaire = () => setQuestionnaireOpen(false);
 
   return (
-    <div id="contact" className="relative flex flex-col items-center justify-center h-screen bg-rose-800 text-white text-center p-8 overflow-hidden">
+    <div id="contact" className="relative flex flex-col items-center justify-center h-[70vh] md:h-screen bg-rose-800 text-white text-center p-8 overflow-hidden">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
 
       <div className="absolute inset-0 flex items-center justify-center z-0 translate-y-1/3">
         <HalfMoon />
       </div>
-      <h2 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-8">
+      <h2 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-20">
         Let's talk about your next project!
       </h2>
       <div className="relative z-10 flex flex-row justify-center space-x-4 mb-8">
