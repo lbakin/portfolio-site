@@ -65,7 +65,7 @@ const FeaturedWorks = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl py-20 text-center uppercase tracking-wider"> <span className="flair-word">F</span>eatured Works</h2>
+        <h2 className="text-6xl py-20 text-center uppercase tracking-wider"> <span className="flair-word text-7xl">F</span>eatured Works</h2>
         <div className="flex flex-wrap justify-between gap-32 space-y-16 relative">
           {works.map((work, index) => (
             <div

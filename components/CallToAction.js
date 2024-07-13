@@ -10,7 +10,6 @@ const HalfMoon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="w-full h-full"
-      // style={{ transform: 'translate3d(-556.775px, -4.5541%, 0px)' }}
     >
       <circle cx="627" cy="627" r="627" fill="url(#paint0_radial_3260_3)" />
       <defs>
@@ -55,14 +54,6 @@ const CallToAction = () => {
         </div>
       </div>
       <div className="relative z-10 flex flex-row space-x-6 mb-4">
-        <a
-          href="https://www.instagram.com/butterynubs/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-rose-600 transition duration-300 ease-in-out"
-        >
-          <i className="fab fa-instagram text-3xl"></i>
-        </a>
         <a
           href="mailto:levbakin@gmail.com"
           className="text-white hover:text-rose-500 transition duration-300 ease-in-out"
