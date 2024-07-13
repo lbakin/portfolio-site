@@ -92,7 +92,7 @@ const FeaturedWorks = () => {
               <div
                 className="preview absolute rounded-xl z-10 hidden md:block -right-10 -top-10 flex-shrink-0"
                 ref={(el) => (refs.current.previews[index] = el)}
-                style={{ width: '300px', height: '450px', opacity: 1, zIndex: 10 }}
+                style={{ width: '300px', height: '450px', opacity: 0, zIndex: 10 }}
               >
                 <img
                   src={work.previewImage}
