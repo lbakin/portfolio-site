@@ -17,12 +17,19 @@ const works = [
       link: 'https://www.graberblinds.com',
   },
   {
-      title: 'WI Dept of Children and Families',
+      title: 'Wisconsin Dept of Children and Families',
       image: '/images/kids-classroom.jpg',
       description: 'Govt office for childcare needs',
       previewImage: '/images/DCFPreview.png',
       link: 'https://dcf.wisconsin.gov',  
   },
+  {
+    title: 'Terrain Guessr',
+    image: '/images/TerrainGuessr.png',
+    description: 'Locate yourself on Earth using only a terrain map',
+    previewImage: '/images/TerrainGuessrPreview2.png',
+    link: 'https://terrainguessr.netlify.app',  
+},
 ];
 
 const FeaturedWorks = () => {
@@ -60,13 +67,13 @@ const FeaturedWorks = () => {
 
   return (
     <section 
-      className={`pb-52 transition-colors duration-300 md:px-14 ${
-        hoveredIndex !== null ? 'bg-teal-200' : 'bg-gray-100'
+      className={`pb-28 sm:pb-52 transition-colors duration-300 md:px-14 ${
+        hoveredIndex !== null ? 'bg-teal-200' : 'bg-slate-200'
       }`}
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl py-20 text-center uppercase tracking-wider"> <span className="flair-word text-7xl">F</span>eatured Works</h2>
-        <div className="flex flex-wrap justify-between gap-32 space-y-16 relative">
+        <h2 className="text-6xl py-24 text-center uppercase tracking-wider"> <span className="flair-word text-7xl">F</span>eatured Works</h2>
+        <div className="flex flex-wrap justify-between gap-12 sm:gap-32 space-y-2 sm:space-y-16 relative">
           {works.map((work, index) => (
             <div
               key={index}
@@ -78,7 +85,7 @@ const FeaturedWorks = () => {
               onMouseEnter={(e) => handleMouseEnter(index, e)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
-              <a href={work.link} className="block relative overflow-hidden hover:grayscale">
+              <a href={work.link} target="_blank" className="block relative overflow-hidden hover:grayscale">
                 <img
                   src={work.image}
                   alt={work.title}
@@ -86,11 +93,11 @@ const FeaturedWorks = () => {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center text-white p-6 transition-opacity duration-300 rounded-xl">
                   <h3 className="text-xl font-semibold mb-2 md:w-2/5 lg:w-1/2">{work.title}</h3>
-                  <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 md:w-1/2">{work.description}</p>
+                  <p className="sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300 md:w-1/3">{work.description}</p>
                 </div>
               </a>
               <div
-                className="preview absolute rounded-xl z-10 hidden md:block -right-10 -top-10 flex-shrink-0"
+                className="preview absolute rounded-xl z-10 hidden md:block -right-10 -top-20 flex-shrink-0"
                 ref={(el) => (refs.current.previews[index] = el)}
                 style={{ width: '300px', height: '450px', opacity: 0, zIndex: 10 }}
               >

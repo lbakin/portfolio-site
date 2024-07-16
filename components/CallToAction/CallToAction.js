@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import Questionnaire from './Questionnaire'; 
+import SocialLinks from "./SocialLinks"
+
 
 const HalfMoon = () => {
   return (
@@ -36,7 +38,7 @@ const CallToAction = () => {
   const closeQuestionnaire = () => setQuestionnaireOpen(false);
 
   return (
-    <div id="contact" className="relative flex flex-col items-center justify-center h-[70vh] md:h-screen bg-rose-800 text-white text-center p-8 overflow-hidden">
+    <div id="contact" className="relative flex flex-col items-center justify-center min-h-[70vh] md:h-screen bg-rose-800 text-white text-center p-8 overflow-hidden">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
 
       <div className="absolute inset-0 flex items-center justify-center z-0 translate-y-1/3">
@@ -53,30 +55,7 @@ const CallToAction = () => {
           <button onClick={openQuestionnaire}>Discuss Project</button>
         </div>
       </div>
-      <div className="relative z-10 flex flex-row space-x-6 mb-4">
-        <a
-          href="mailto:levbakin@gmail.com"
-          className="text-white hover:text-rose-500 transition duration-300 ease-in-out"
-        >
-          <i className="fas fa-envelope text-3xl"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/lev-bakin/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-rose-600 transition duration-300 ease-in-out"
-        >
-          <i className="fab fa-linkedin text-3xl"></i>
-        </a>
-        <a
-          href="https://github.com/lbakin"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white hover:text-rose-600 transition duration-300 ease-in-out"
-        >
-          <i className="fab fa-github text-3xl"></i>
-        </a>
-      </div>
+      <SocialLinks />
       <Questionnaire isOpen={isQuestionnaireOpen} onClose={closeQuestionnaire} />
     </div>
   );

@@ -51,13 +51,13 @@ const Showcase = () => {
 
   return (
     <div className={`flex flex-col xl:flex-row justify-center items-center h-auto xl:h-screen transition-all duration-1000 ease-in-out ${isHovered ? 'hover-gradient' : ''}`}>
-      <div className="w-full xl:w-1/4 p-8 relative text-center xl:text-left mt-8 xl:mt-0">
-        <p className="text-2xl sm:text-3xl md:text-4xl font-sans leading-relaxed">
-        Hi, I'm Lev Bakin. I create websites that blend <span className="flair-word">visual</span> appeal with seamless usability.
-          
+      <div className="w-full xl:w-2/5 p-8 relative text-center xl:text-left mt-8 xl:mt-0">
+        <p className="text-2xl sm:text-3xl md:text-4xl font-sans leading-relaxed tracking-wide">
+        Hi, I'm Lev Bakin. I create websites that blend <span className="flair-word">visual</span> appeal with seamless usability. 
+        I specialize in quickly building small portfolio sites that highlight your unique work and personal brand.
         </p>
       </div>
-      <div className={`w-full xl:w-3/4 flex justify-center items-center mx-auto relative py-20 overflow-hidden`}>
+      <div className={`w-full xl:w-3/5 flex justify-center items-center mx-auto relative py-20 overflow-hidden`}>
         <DisplayCards onHover={setIsHovered} />
       </div>
     </div>
