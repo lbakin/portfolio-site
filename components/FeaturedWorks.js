@@ -67,6 +67,7 @@ const FeaturedWorks = () => {
 
   return (
     <section 
+      id="works"
       className={`pb-28 sm:pb-52 transition-colors duration-300 md:px-14 ${
         hoveredIndex !== null ? 'bg-teal-200' : 'bg-slate-200'
       }`}

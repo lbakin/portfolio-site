@@ -11,7 +11,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-4/5 font-sans p-8 text-center">
+    <div id="header" className="flex justify-center items-center h-4/5 font-sans py-12 px-8 text-center">
       <h1 className="text-6xl sm:text-8xl md:text-9xl font-medium">
         Crafting
         <div className={`transition-opacity duration-500 pt-2 pb-4 ${delayFlairWord ? 'opacity-100 flair-word' : 'opacity-0'}`}>

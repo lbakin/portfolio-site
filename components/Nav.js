@@ -6,13 +6,38 @@ const Nav = () => {
   const LinkClasses="text-black underline hover:text-rose-800 hover:bg-white rounded-md cursor-pointer"
 
   return (
-    <div className="sticky top-0 w-full px-4 z-50 bg-white">
+    <div className="sticky top-0 w-full sm:px-4 z-50 bg-white">
       <nav>
-        <ul className="flex justify-between">
+        <ul className="flex justify-between items-center">
           <li>
-            <Link href="/" className={`${LinkClasses}`}>
+            <ScrollLink 
+              to="header"
+              smooth={true}
+              duration={500}
+              className={`${LinkClasses} hidden sm:inline`}>
               Home
-            </Link>
+            </ScrollLink>
+          </li>
+          <div className="flex flex-row">
+          <li>
+            <ScrollLink
+            to="works"
+            smooth={true}
+            duration={500}
+            className={`${LinkClasses}`}
+            >
+              Feat Works
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+            to="packages"
+            smooth={true}
+            duration={500}
+            className={`${LinkClasses}`}
+            >
+              Packages
+            </ScrollLink>
           </li>
           <li>
             <ScrollLink
@@ -24,6 +49,7 @@ const Nav = () => {
               Contact
             </ScrollLink>
           </li>
+          </div>
         </ul>
       </nav>
     </div>

@@ -44,7 +44,7 @@ const CallToAction = () => {
       <div className="absolute inset-0 flex items-center justify-center z-0 translate-y-1/3">
         <HalfMoon />
       </div>
-      <h2 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-20">
+      <h2 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold pt-12 mb-20">
         Let's talk about your next project!
       </h2>
       <div className="relative z-10 flex flex-row justify-center space-x-4 sm:space-x-14 mb-12">
