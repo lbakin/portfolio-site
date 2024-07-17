@@ -7,6 +7,7 @@ import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 import Questionnaire from "../components/CallToAction/Questionnaire"
 import FeaturedWorks from "../components/FeaturedWorks"
+import Packages from "../components/Packages"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Header />
         <Showcase />
         <FeaturedWorks />
+        <Packages />
         <CallToAction />
         <Questionnaire />
         <Footer />

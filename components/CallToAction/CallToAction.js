@@ -47,11 +47,11 @@ const CallToAction = () => {
       <h2 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-20">
         Let's talk about your next project!
       </h2>
-      <div className="relative z-10 flex flex-row justify-center space-x-4 mb-8">
-        <div className="border-white border-2 bg-rose-800 rounded-full px-6 py-3 text-lg font-semibold hover:bg-rose-600 transition duration-300 ease-in-out">
+      <div className="relative z-10 flex flex-row justify-center space-x-4 sm:space-x-14 mb-12">
+        <div className="border-white border-2 bg-rose-800 rounded-full px-10 py-6 text-lg font-semibold hover:bg-rose-600 transition duration-300 ease-in-out">
           <a href="mailto:levbakin@gmail.com">Write a message</a>
         </div>
-        <div className="border-white border-2 bg-rose-800 rounded-full px-6 py-3 text-lg font-semibold hover:bg-rose-600 transition duration-300 ease-in-out">
+        <div className="border-white border-2 bg-rose-800 rounded-full px-10 py-6 text-lg font-semibold hover:bg-rose-600 transition duration-300 ease-in-out">
           <button onClick={openQuestionnaire}>Discuss Project</button>
         </div>
       </div>
