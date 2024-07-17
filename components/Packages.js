@@ -8,7 +8,7 @@ const Packages = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-6xl py-12 text-center uppercase tracking-wider"><span className="flair-word text-7xl">P</span>ackages</h2>
         <p className="text-lg text-gray-700 mb-8">
-          I want to make getting your website setup as easy and painless for you as possible. If you provide me with some content, I will take care of all the technical work for you.
+          I want to make getting your website set up as easy and painless for you as possible. If you provide me with some content, I will take care of all the technical work for you.
         </p>
         
         <div className="bg-white shadow-md rounded-lg p-6 mb-8 border-l-4 border-rose-800">

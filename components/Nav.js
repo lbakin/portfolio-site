@@ -26,7 +26,7 @@ const Nav = () => {
             duration={500}
             className={`${LinkClasses}`}
             >
-              Feat Works
+              Featured Works
             </ScrollLink>
           </li>
           <li>
