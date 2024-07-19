@@ -11,6 +11,7 @@ const Questionnaire = ({ isOpen, onClose }) => {
     budget: ''   
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
   const totalSteps = 5;
 
   const nextStep = () => setStep(step + 1);
@@ -33,6 +34,13 @@ const Questionnaire = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault(); 
+
+    // Validation check
+    if (!formData.name || !formData.email) {
+      setError('Name and Email are required.');
+      return;
+    }
+
     fetch('https://formspree.io/f/xkgwnjwn', {
       method: 'POST',
       headers: {
@@ -210,6 +218,7 @@ const Questionnaire = ({ isOpen, onClose }) => {
               />
             </Step>
           )}
+          {error && <p className="text-red-500 text-center">{error}</p>}
           {step === 6 && (
             <div className="text-center">
               <h2 className="text-xl text-black font-semibold mb-4">Thank you for your request. I'm excited to start this project together!</h2>
