@@ -32,7 +32,6 @@ const Packages = () => {
             <li><strong>Google Analytics:</strong> Track and analyze your website’s performance.</li>
             <li><strong>Content Management System (CMS):</strong> Easily change images, videos, and text without coding.</li>
             <li><strong>Blog Integration:</strong> Set up a blog to share updates and engage with your audience.</li>
-            <li><strong>E-commerce Functionality:</strong> Sell products directly from your website.</li>
           </ul>
         </div>
         
