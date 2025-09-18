@@ -7,7 +7,7 @@ const Header = () => {
   useEffect(() => {
     setTimeout(() => {
       setDelayFlairWord(true);
-    }, 500);
+    }, 200);
   }, []);
 
   return (
@@ -15,7 +15,7 @@ const Header = () => {
       <h1 className="text-6xl sm:text-8xl md:text-9xl font-medium">
         Crafting
         <div className={`transition-opacity duration-500 pt-2 pb-4 ${delayFlairWord ? 'opacity-100 flair-word' : 'opacity-0'}`}>
-          Smooth
+          Seamless
         </div>
         Digital Experiences
       </h1>
