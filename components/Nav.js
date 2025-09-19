@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 
 const Nav = () => {
-  const LinkClasses="text-black underline hover:text-rose-800 hover:bg-white rounded-md cursor-pointer"
+  const LinkClasses="text-rose-100 hover:text-rose-800 hover:bg-white rounded-md cursor-pointer"
 
   return (
-    <div className="sticky top-0 w-full sm:px-4 z-50 bg-white">
+    <div className="sticky top-0 w-full sm:px-4 z-50 bg-rose-800">
       <nav>
         <ul className="flex justify-between items-center">
           <li>
@@ -28,6 +28,14 @@ const Nav = () => {
             >
               Featured Works
             </ScrollLink>
+          </li>
+          <li>
+            <a 
+              href="/projects"
+              className={`${LinkClasses}`}
+            >
+              More Projects
+            </a>
           </li>
           <li>
             <ScrollLink

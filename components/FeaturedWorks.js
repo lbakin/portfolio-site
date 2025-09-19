@@ -10,18 +10,18 @@ const works = [
     link: 'https://www.onapproval.com',
   },
   {
-      title: 'Graber',
-      description: 'E-commerce site for custom window treatments brand',
-      image: '/images/graber-golden.png',
-      previewImage: '/images/GraberPreview.png',
-      link: 'https://www.graberblinds.com',
+    title: 'Graber',
+    description: 'E-commerce site for custom window treatments brand',
+    image: '/images/graber-golden.png',
+    previewImage: '/images/GraberPreview.png',
+    link: 'https://www.graberblinds.com',
   },
   {
-      title: 'Wisconsin Dept of Children and Families',
-      image: '/images/kids-classroom.jpg',
-      description: 'Govt office for childcare needs',
-      previewImage: '/images/DCFPreview.png',
-      link: 'https://dcf.wisconsin.gov',  
+    title: 'Wisconsin Dept of Children and Families',
+    image: '/images/kids-classroom.jpg',
+    description: 'Govt office for childcare needs',
+    previewImage: '/images/DCFPreview.png',
+    link: 'https://dcf.wisconsin.gov',  
   },
   {
     title: 'Terrain Guessr',
@@ -29,7 +29,14 @@ const works = [
     description: 'Locate yourself on Earth using only a terrain map',
     previewImage: '/images/TerrainGuessrPreview2.png',
     link: 'https://terrainguessr.netlify.app',  
-},
+  },
+  {
+    title: 'More Projects',
+    image: '',
+    description: 'DealerOn builds & other client work',
+    previewImage: '',
+    link: '',
+  }
 ];
 
 const FeaturedWorks = () => {
