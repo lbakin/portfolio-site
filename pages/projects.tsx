@@ -220,7 +220,7 @@ export default function MoreProjectsPage() {
           <p>
             Showing <strong>{projects.length}</strong> {activeTag === "All" ? "projects" : `${activeTag} project(s)`}.
           </p>
-          <Link href="/contact" className="underline-offset-4 hover:underline">
+          <Link href="/#contact" className="underline-offset-4 hover:underline">
             Want details? Let’s chat →
           </Link>
         </div>

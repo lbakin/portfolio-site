@@ -32,10 +32,10 @@ const works = [
   },
   {
     title: 'More Projects',
-    image: '',
+    image: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
     description: 'DealerOn builds & other client work',
-    previewImage: '',
-    link: '',
+    previewImage: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
+    link: '/projects',
   }
 ];
 
