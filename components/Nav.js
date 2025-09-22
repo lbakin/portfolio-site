@@ -9,7 +9,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const navItems = [
   { label: 'Home', kind: 'section', id: 'header' },
   { label: 'Featured Works', kind: 'section', id: 'works' },
-  { label: 'More Projects', kind: 'route', href: '/projects' },
+  // { label: 'More Projects', kind: 'route', href: '/projects' },
   { label: 'Packages', kind: 'section', id: 'packages' },
   { label: 'Contact', kind: 'section', id: 'contact' },
 ];
