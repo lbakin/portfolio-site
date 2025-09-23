@@ -52,7 +52,17 @@ const ALL_PROJECTS: Project[] = [
       "Custom Drupal theme with hero paragraph type, centralized color variables, and clean content model for growth.",
     tags: ["Drupal", "Design System"],
   },
-  // Add more…
+  {
+    title: "OCF Operations Map",
+    href: "https://ocf-map.netlify.app/",
+    image: "/images/projects/ocf-map-thumb.png", 
+    alt: "Leaflet map with custom Oregon marker and semi-transparent site overlays",
+    blurb:
+      "Lightweight Leaflet map with user geolocation, custom Oregon pin, and togglable raster overlays for on-site operations. Built for quick situational awareness on mobile.",
+    external: true,
+    tags: ["Leaflet", "React", "GIS", "Overlays"]
+  }
+  
 ];
 
 // ---- Page ----
