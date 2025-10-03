@@ -3,6 +3,13 @@ import { gsap } from 'gsap';
 
 const works = [
   {
+    title: 'Madison Pinball',
+    description: 'Local pinball organization',
+    image: '/images/extra-ball.jpg',
+    previewImage: '/images/MadisonPinballPreview.png',
+    link: 'https://madisonpinball.com',
+  },
+  {
     title: 'On Approval',
     description: 'Fine art rental service',
     image: '/images/OnApprovalRoom.jpg',
