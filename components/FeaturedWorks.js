@@ -37,13 +37,13 @@ const works = [
     previewImage: '/images/TerrainGuessrPreview2.png',
     link: 'https://terrainguessr.netlify.app',  
   },
-  // {
-  //   title: 'More Projects',
-  //   image: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
-  //   description: 'DealerOn builds & other client work',
-  //   previewImage: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
-  //   link: '/projects',
-  // }
+  {
+    title: 'More Projects',
+    image: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
+    description: 'DealerOn builds & other client work',
+    previewImage: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
+    link: '/projects',
+  }
 ];
 
 const FeaturedWorks = () => {
