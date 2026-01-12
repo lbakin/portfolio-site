@@ -41,7 +41,7 @@ const works = [
     title: 'More Projects',
     image: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
     description: 'DealerOn builds & other client work',
-    previewImage: '/images/anete-lusina-zwsHjakE_iI-unsplash.jpg',
+    previewImage: '/images/dealeron-onboard.png',
     link: '/projects',
   }
 ];
