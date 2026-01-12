@@ -1,8 +1,29 @@
-import Home from '.';
-import Head from 'next/head.js';
-import '../styles/globals.css'; // Path to your global CSS file
+import Head from 'next/head';
+import Script from 'next/script';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import '../styles/globals.css';
+
+const GA_ID = 'G-KNKS673TF6';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if (window.gtag) {
+        window.gtag('config', GA_ID, {
+          page_path: url,
+        });
+      }
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       <Head>
@@ -12,8 +33,26 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
+
+      {/* Google Analytics */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="ga4" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}', {
+            anonymize_ip: true
+          });
+        `}
+      </Script>
+
       <Component {...pageProps} />
     </>
   );
 }
+
 export default MyApp;
